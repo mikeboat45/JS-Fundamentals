@@ -13,3 +13,24 @@ function getFactorial(a) {
 } 
 
 getFactorial(a);
+
+
+/*
+const { argv } = require('node:process');
+const Big = require('big.js');
+
+let input = argv[2];
+let n = Number(input);
+
+function getFactorial(n) {
+	let result = Big(1);
+
+	for (let i = 2; i <= n; i++) {
+		result = result.times(i);
+	}
+
+	console.log(result.toString());
+}
+
+getFactorial(n);
+*/
